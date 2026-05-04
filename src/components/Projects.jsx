@@ -25,7 +25,7 @@ const projects = [
     impact: [
       'Eliminated prompt engineering complexity for educators.',
     ],
-    techs: ['Next JS', 'TypeScript', 'Tailwind', 'LLaMA 3'],
+    techs: ['Next JS', 'TypeScript', 'Tailwind', 'LLaMA 3', "Node JS", "MongoDB", "Prisma"],
     images: ['/img/portfolio/jagoan1.webp','/img/portfolio/jagoan2.webp', '/img/portfolio/jagoan3.webp'],
     liveUrl: "https://jagoan-soal-app.vercel.app/",
   },
@@ -38,7 +38,7 @@ const projects = [
     impact: [
       'Developed 18 RESTful API endpoints for real-time sentiment predictions.',
       'Designed 31 interactive UI screens in Figma and translated them into code.',
-      'Led an agile team of 3 using Trello, managing 79+ backlog items.',
+      'Led an agile team of 3 using, managing 79+ backlog items.',
       'Achieved Grade "A" on the final thesis evaluation.',
     ],
     techs: ['React JS', 'SCSS', 'Python', 'FastAPI', 'MongoDB', 'Trello', 'Figma'],
