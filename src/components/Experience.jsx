@@ -17,7 +17,7 @@ const achievements = [
   },
 ]
 
-const techs = ['React JS', 'TypeScript', 'SCSS', 'RESTful API', 'GitLab CI/CD', 'Figma', 'Trello']
+const techs = ['React JS', 'TypeScript', 'SCSS', 'RESTful API', 'Node JS', 'Prisma', 'PostgreSQL']
 
 function Experience() {
   return (

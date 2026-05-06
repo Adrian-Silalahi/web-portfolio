@@ -12,7 +12,7 @@ const projects = [
       'Designed 5 data models with Prisma for type-safe database operations.',
       'Built a private admin dashboard tracking 6 key store metrics in real-time.',
     ],
-    techs: ['Next JS', 'TypeScript', 'Tailwind', 'Node JS', 'MySQL', 'Prisma'],
+    techs: ['Next JS', 'TypeScript', 'Tailwind', 'Node JS', 'MongoDB', 'Prisma'],
     images: ['/img/portfolio/bodat1.webp', '/img/portfolio/bodat2.webp', '/img/portfolio/bodat3.webp', '/img/portfolio/bodat4.webp'],
     liveUrl: 'https://bodat-chic-sec.vercel.app/',
   },
@@ -38,7 +38,7 @@ const projects = [
     impact: [
       'Developed 18 RESTful API endpoints for real-time sentiment predictions.',
       'Designed 31 interactive UI screens in Figma and translated them into code.',
-      'Led an agile team of 3 using, managing 79+ backlog items.',
+      'Led an agile team of 3, managing 79+ backlog items across the full development cycle.',
       'Achieved Grade "A" on the final thesis evaluation.',
     ],
     techs: ['React JS', 'SCSS', 'Python', 'FastAPI', 'MongoDB', 'Trello', 'Figma'],
