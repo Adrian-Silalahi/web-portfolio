@@ -4,7 +4,7 @@ const projects = [
   {
     title: 'Bodat Chic Sec',
     subtitle: 'Full-Stack E-Commerce Platform',
-    period: 'Jul 2021 — Present',
+    period: 'Apr 2026 — Present',
     problem: 'My thrift store needed a dedicated platform beyond marketplace apps to build a stronger brand identity and control the customer experience end-to-end.',
     solution: 'Built a responsive, full-stack e-commerce platform with real-time cart, admin dashboard, authentication, and payment integration — from scratch.',
     impact: [
