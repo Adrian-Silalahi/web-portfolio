@@ -71,7 +71,7 @@ const entries = [
     ],
     techs: ['Next JS', 'TypeScript', 'Tailwind', 'Node JS', 'MongoDB', 'Prisma'],
     images: ['/img/portfolio/bodat1.webp', '/img/portfolio/bodat2.webp', '/img/portfolio/bodat3.webp', '/img/portfolio/bodat4.webp'],
-    liveUrl: 'https://bodat-chic-sec.vercel.app/',
+    liveUrl: 'https://www.bodat-chic-sec.shop/',
   },
 ]
 
