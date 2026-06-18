@@ -4,7 +4,7 @@ const projects = [
   {
     title: 'Bodat Chic Sec',
     subtitle: 'Full-Stack E-Commerce Platform',
-    period: 'Jan 2026 — Present',
+    period: 'Mar – Jun 2026',
     problem: 'My thrift store needed a dedicated platform beyond marketplace apps to build a stronger brand identity and control the customer experience end-to-end.',
     solution: 'Built a responsive, full-stack e-commerce platform with real-time cart, admin dashboard, authentication, and payment integration — from scratch.',
     impact: [
@@ -19,7 +19,7 @@ const projects = [
   {
     title: 'Jagoan Soal',
     subtitle: 'AI-powered tool to generate questions',
-    period: 'Mar 2026',
+    period: 'Feb 2026',
     problem: 'Educators struggle to generate varied, high-quality practice questions that align with specific curricula and learning objectives.',
     solution: 'Developed a user-friendly exam generator that eliminated prompt engineering complexity and enabled non-technical users to create questions across 12 grade levels with a single click.',
     impact: [
