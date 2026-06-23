@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.theme === 'dark'
+      return localStorage.portfolio_theme === 'dark'
     }
     return false
   })
@@ -18,10 +18,10 @@ function App() {
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark')
-      localStorage.theme = 'dark'
+      localStorage.portfolio_theme = 'dark'
     } else {
       document.documentElement.classList.remove('dark')
-      localStorage.theme = 'light'
+      localStorage.portfolio_theme = 'light'
     }
   }, [darkMode])
 
