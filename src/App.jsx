@@ -10,8 +10,7 @@ import Footer from './components/Footer'
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      return localStorage.theme === 'dark'
     }
     return false
   })
