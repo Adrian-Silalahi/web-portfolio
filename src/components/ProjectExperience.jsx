@@ -13,11 +13,11 @@ const entries = [
     problem: 'My thrift store needed a dedicated platform beyond marketplace apps to build a stronger brand identity and control the customer experience end-to-end.',
     solution: 'Built a responsive, full-stack e-commerce platform with real-time cart, admin dashboard, authentication, and payment integration — from scratch.',
     bullets: [
-      'Engineered fullstack e-commerce platform with 9 core features (JWT authentication, Stripe payments, shopping cart, checkout flow, order management) enabling online thrift shop operations using Next.js, Tailwind, Redux, TypeScript, Node.js, and MongoDB.',
-      'Built admin dashboard streamlining product catalog and inventory management through real-time analytics tracking 5 key business metrics (orders, revenue, users, inventory, payment status).',
-      'Deployed production-ready application on Vercel with automated CI/CD pipeline, ensuring seamless updates and reliable performance.',
+      'Engineered a full-stack e-commerce platform with 13 core features (authentication, product filtering, cart, Midtrans payment, order tracking) enabling online thrift shop operations using Next.js 16, TypeScript, PostgreSQL (Prisma), and Supabase.',
+      'Built a role-protected admin dashboard streamlining product CRUD and order management through real-time analytics tracking 6 key data points (revenue, orders, inventory, pending alerts, stale detection).',
+      'Integrated RajaOngkir API for real-time shipping cost calculation across multiple courier services.',
     ],
-    techs: ['Next JS', 'TypeScript', 'Tailwind', 'Node JS', 'MongoDB', 'Prisma'],
+    techs: ['Next JS', 'TypeScript', 'Tailwind', 'PostgreSQL', 'Prisma', 'Supabase', 'Midtrans', 'RajaOngkir'],
     images: ['/img/portfolio/bodat1.webp', '/img/portfolio/bodat2.webp', '/img/portfolio/bodat3.webp', '/img/portfolio/bodat4.webp'],
     liveUrl: 'https://www.bodat-chic-sec.shop/',
   },
@@ -36,6 +36,8 @@ const entries = [
       'Authored comprehensive technical documentation detailing bug root-cause analysis and system architecture, facilitating seamless knowledge transfer to incoming developers.',
     ],
     techs: ['React JS', 'Redux', 'TypeScript', 'SCSS', 'RESTful API', 'GitLab CI/CD'],
+    images: [ '/img/portfolio/sertifikat-magang.webp', '/img/portfolio/ciamic.png'],
+    imageFit: 'contain',
   },
   {
     type: 'project',
@@ -77,7 +79,7 @@ const entries = [
 
 // ─── Image Gallery (for project entries) ──────────────────────────────────
 
-function ImageGallery({ images, title }) {
+function ImageGallery({ images, title, fit }) {
   const [activeImg, setActiveImg] = useState(0)
 
   return (
@@ -85,7 +87,9 @@ function ImageGallery({ images, title }) {
       <img
         src={images[activeImg]}
         alt={`${title} screenshot ${activeImg + 1}`}
-        className="h-full w-full object-cover transition-all duration-500"
+        className={`h-full w-full transition-all duration-500 ${
+          fit === 'contain' ? 'object-contain' : 'object-cover'
+        }`}
         loading="lazy"
       />
       <div className="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-black/30 to-transparent" />
@@ -184,7 +188,7 @@ function EntryCard({ entry, index }) {
         <div className="space-y-6 px-6 py-6 sm:px-7">
           {/* Image gallery for projects */}
           {entry.images && (
-            <ImageGallery images={entry.images} title={entry.title} />
+            <ImageGallery images={entry.images} title={entry.title} fit={entry.imageFit} />
           )}
 
           {/* Description (work) or Problem/Solution (project) */}
