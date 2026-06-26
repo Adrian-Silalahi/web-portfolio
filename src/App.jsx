@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Projects from './components/Projects'
 import About from './components/About'
-import ProjectExperience from './components/ProjectExperience'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -47,12 +48,13 @@ function App() {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main>
         <Hero />
+        <Projects />
         <About />
-        <ProjectExperience />
         <Education />
         <Contact />
       </main>
       <Footer />
+      <BackToTop />
     </div>
   )
 }

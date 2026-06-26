@@ -7,21 +7,13 @@ const achievements = [
     icon: '🐛',
     text: 'Resolved 26 critical bugs with zero blocking issues in production, backed by in-depth technical documentation and root cause analysis.',
   },
-  {
-    icon: '🎨',
-    text: 'Translated Figma UI/UX designs into pixel-accurate, production-ready code and integrated RESTful API endpoints.',
-  },
-  {
-    icon: '🔁',
-    text: 'Implemented CI/CD pipelines using GitLab, enabling seamless code integration and automated deployment workflows.',
-  },
 ]
 
 const techs = ['React JS', 'TypeScript', 'SCSS', 'RESTful API', 'Node JS', 'Prisma', 'PostgreSQL']
 
 function Experience() {
   return (
-    <section id="experience" className="bg-slate-100/50 py-24 dark:bg-dark-50/50 sm:py-32">
+    <section id="experience" className="bg-slate-100/50 py-32 dark:bg-dark-50/50 sm:py-40">
       <div className="section-container">
         {/* Section Header */}
         <div className="reveal mb-16 text-center">

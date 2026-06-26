@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 
 const navItems = [
+  { label: 'Projects', href: '#projects' },
   { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
   { label: 'Education', href: '#education' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -64,8 +64,9 @@ function Navbar({ darkMode, setDarkMode }) {
           {/* Logo */}
           <a
             href="#hero"
-            className="text-lg font-bold tracking-tight text-slate-900 transition-colors hover:text-primary-600 dark:text-white dark:hover:text-primary-400"
+            className="flex items-center text-lg font-bold tracking-tight text-slate-900 transition-colors hover:text-primary-600 dark:text-white dark:hover:text-primary-400"
           >
+            <span className="mr-2 flex h-8 w-8 items-center justify-center rounded-full bg-primary-500 text-xs font-bold text-white">AS</span>
             adrian<span className="text-primary-500">silalahi</span>
           </a>
 
@@ -73,7 +74,7 @@ function Navbar({ darkMode, setDarkMode }) {
           <nav className="hidden items-center gap-8 md:flex">
             {navItems.map((item) => (
               <a
-                key={item.href}
+                key={item.label}
                 href={item.href}
                 className={`nav-link ${activeSection === item.href.slice(1) ? 'active' : ''}`}
               >
@@ -134,13 +135,13 @@ function Navbar({ darkMode, setDarkMode }) {
         <div
           id="mobile-menu"
           className={`overflow-hidden transition-all duration-300 md:hidden ${
-            mobileOpen ? 'max-h-64 pb-4' : 'max-h-0'
+            mobileOpen ? 'max-h-80 pb-4' : 'max-h-0'
           }`}
         >
           <nav className="flex flex-col gap-1 rounded-xl border border-slate-200/60 bg-white/90 p-3 backdrop-blur-lg dark:border-slate-700/60 dark:bg-dark-50/90">
             {navItems.map((item) => (
               <a
-                key={item.href}
+                key={item.label}
                 href={item.href}
                 onClick={handleNavClick}
                 className={`rounded-lg px-4 py-2.5 text-sm font-medium transition-colors ${
